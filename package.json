@@ -1,0 +1,33 @@
+{
+  "name": "backend-node",
+  "version": "1.0.0",
+  "description": "Prueba tecnica backend junior con Node 21, TypeScript, Express y arquitectura hexagonal",
+  "main": "dist/main.js",
+  "private": true,
+  "engines": {
+    "node": ">=21"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "typeorm": "typeorm-ts-node-commonjs -d src/infrastructure/persistence/typeorm/data-source.ts",
+    "lint": "echo \"No lint configured\""
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "reflect-metadata": "^0.2.2",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.24"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.17",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typeorm-ts-node-commonjs": "^0.3.20",
+    "typescript": "^5.8.3"
+  }
+}
